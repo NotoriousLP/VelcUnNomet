@@ -28,6 +28,11 @@ public class Objekti : MonoBehaviour {
 	//Uzglabās pēdejo objektu, kurš pakustināts
 	public GameObject pedejaisVilktais = null;
 
+	void Start() {
+		atkrKoord = atkritumaMasina.GetComponent<RectTransform> ().localPosition;
+		atroKoord = atraPalidziba.GetComponent<RectTransform> ().localPosition;
+		bussKoord = autobuss.GetComponent<RectTransform> ().localPosition;
+	}
 
 
 
