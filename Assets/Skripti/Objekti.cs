@@ -23,6 +23,11 @@ public class Objekti : MonoBehaviour {
 	public GameObject teksts;
 	public GameObject atkartotSpeli;
 	public GameObject atgrieztiesGalvena;
+	public GameObject laikaRaditajs;
+	//Pievienosu 3 zvaigznes
+	public GameObject Zvaigzne1;
+	public GameObject Zvaigzne2;
+	public GameObject Zvaigzne3;
 	[HideInInspector]
 	public int skaits = 0;
 
