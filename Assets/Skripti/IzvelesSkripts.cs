@@ -12,6 +12,12 @@ public class IzvelesSkripts : MonoBehaviour {
 		SceneManager.LoadScene ("Pilseta", LoadSceneMode.Single);
 	}
 
+
+	public void uzGalvenoIzveli(){
+		//Iejies atpakaļ uz galveno izvēli
+		SceneManager.LoadScene (0, LoadSceneMode.Single);
+	}
+
 	public void beigtSpeli(){
 		//Izies ārā no spēles
 		Application.Quit ();

@@ -9,6 +9,7 @@ public class Objekti : MonoBehaviour {
 	public GameObject atkritumaMasina;
 	public GameObject atraPalidziba;
 	public GameObject autobuss;
+	//Pievienotas 8 jaunas mašīnas
 	public GameObject cementaMasina;
 	public GameObject eskavators;
 	public GameObject e46;
@@ -17,6 +18,13 @@ public class Objekti : MonoBehaviour {
 	public GameObject traktors1;
 	public GameObject traktors5;
 	public GameObject ugunsDzesejs;
+	//Skaitītajs lai ja visas mašīnas noliktas vietā, izmeta ka esi izdarījis visu un rezultātu tabulu ar pogām un tekstu.
+	public GameObject rezultatuTabula;
+	public GameObject teksts;
+	public GameObject atkartotSpeli;
+	public GameObject atgrieztiesGalvena;
+	[HideInInspector]
+	public int skaits = 0;
 
 
 	//Uzglabā velkamo objektu sākotnējās atrašanās vietas koordinātas

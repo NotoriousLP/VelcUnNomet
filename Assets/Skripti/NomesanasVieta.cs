@@ -47,36 +47,48 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					switch (notikums.pointerDrag.tag) {
 					case "Atikrumi": 
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [1]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					case "AtraPalidziba": 
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [2]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					case "Skola": 
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [3]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
+						//Pievienoti vēl 8 objekti/mašīnas
 					case"Eskavators":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [9]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					case"e46":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [4]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					case"b2":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [5]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					case"Policija":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [6]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					case"Traktors1":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [7]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					case"Traktors5":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [8]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					case"Uguns":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [10]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					case"CementaMasina":
 						objektuSkripts.skanasAvots.PlayOneShot (objektuSkripts.skanaKoAtskanot [11]);
+						objektuSkripts.skaits++; //pieskaita
 						break;
 					default:
 						Debug.Log ("Nedefinēts tags!");
@@ -103,6 +115,7 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 					objektuSkripts.autobuss.GetComponent<RectTransform> ().localPosition 
 					= objektuSkripts.bussKoord;
 					break;
+					//Pievienoti vēl 8 objekti/mašīnas
 				case"Eskavators":
 					objektuSkripts.eskavators.GetComponent<RectTransform> ().localPosition 
 					= objektuSkripts.eskaKoord;
@@ -141,7 +154,13 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 				}
 			}
 		}
-		
+		//Pārbaudis ja skaititajs ir 11 tad izmetīs panelis, ka tu esi visu izdarījis
+		if (objektuSkripts.skaits == 11) {
+			objektuSkripts.rezultatuTabula.SetActive (true);
+			objektuSkripts.teksts.SetActive (true);
+			objektuSkripts.atkartotSpeli.SetActive (true);
+			objektuSkripts.atgrieztiesGalvena.SetActive (true);
+		}
 	}
 
 }
