@@ -28,6 +28,7 @@ public class Objekti : MonoBehaviour {
 	public GameObject Zvaigzne1;
 	public GameObject Zvaigzne2;
 	public GameObject Zvaigzne3;
+	//Skaits lai pieskaita mašīnas klāt
 	[HideInInspector]
 	public int skaits = 0;
 
