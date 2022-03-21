@@ -40,7 +40,7 @@ public class Rezultats : MonoBehaviour {
 			//Izmetīs laukā cik daudz laikā ir izdarīts
 			objektuSkripts.laikaRaditajs.GetComponent<Text> ().text = "Laiks: "+ minutes.ToString ("00") + ":" + seconds.ToString ("00") + ":" + milliseconds.ToString ("00");
 			//Ja laiks ir zemāk par 60 sekundēm, tad iedos tev 3 zvaigznes
-			if (Timer <= 60.0f) {
+			if (Timer <= 80.0f) {
 				objektuSkripts.Zvaigzne3.SetActive (true);
 				//Ja laiks ir zemāk par 120 sekundēm, tad iedos tev 2 zvaigznes
 			} else if (Timer <= 120.0f) {

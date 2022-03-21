@@ -41,6 +41,7 @@ public class Objekti : MonoBehaviour {
 	[HideInInspector]
 	public Vector2 bussKoord;
 	[HideInInspector]
+	//Pievienoti jaunam mašīnām sākotnējās atrašanās vietas koordinātas
 	public Vector2 cementKoord;
 	[HideInInspector]
 	public Vector2 eskaKoord;

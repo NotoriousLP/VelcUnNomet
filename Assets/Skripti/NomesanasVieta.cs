@@ -11,8 +11,7 @@ public class NomesanasVieta : MonoBehaviour, IDropHandler {
 	private float xIzmeruStarp, yIzmeruStarp;
 	//Norāde uz objekti skriptu
 	public Objekti objektuSkripts;
-	//Norāde uz Rezultats skriptu
-	public Rezultats laiks;
+
 
 	//Nostrādas, ja objektu cenšas nomest uz jebkuras nomešanas vietas
 	public void OnDrop(PointerEventData notikums){
